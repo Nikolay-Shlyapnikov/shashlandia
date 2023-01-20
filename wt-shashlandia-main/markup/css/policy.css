@@ -1,0 +1,13 @@
+.policy {
+    padding: 115px 0 0 0;
+}
+
+.policy__title {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.policy p {
+    font-size: 1.3rem;
+    margin: 20px 0 0 0;
+}
