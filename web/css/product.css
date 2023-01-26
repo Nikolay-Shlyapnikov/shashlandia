@@ -1,0 +1,207 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  width: 1200px;
+  padding: 0 24px;
+  margin: 0 auto;
+}
+
+.product {
+  color: #2A2A2A;
+  padding: 100px 0 0 0;
+  background-color: #E5E5E5;
+}
+
+.product__wrapper {
+  width: 100%;
+}
+
+.product__row {
+  margin-top: 90px;
+  max-width: 100%;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: repeat(4, minmax(175px, 1fr));
+}
+
+.product__title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 55px;
+  letter-spacing: -0.03em;
+  text-align: center;
+}
+
+.product__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: space-between;
+  -ms-flex-preferred-size: 24%;
+      flex-basis: 24%;
+  background: #F0F0F0;
+  -webkit-box-shadow: 0px 4px 40px rgba(152, 152, 152, 0.25);
+          box-shadow: 0px 4px 40px rgba(152, 152, 152, 0.25);
+  border-radius: 20px;
+  padding: 13px;
+}
+
+.product__img {
+  max-width: 100%;
+}
+
+.product__button {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  border-radius: 50%;
+  background-color: #E70000;
+  color: #FFF;
+  width: calc(30px + 1.6666666667vw);
+  height: calc(30px + 1.6666666667vw);
+  max-width: 50px;
+  max-height: 50px;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: -0.05em;
+  -webkit-transition-duration: 0.3s;
+       -o-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.product__button.active {
+  max-width: initial;
+  max-height: initial;
+  bottom: 12px;
+  width: 91px;
+  height: 24px;
+  background-color: #FFF;
+  color: #2A2A2A;
+  border: 1px solid #2A2A2A;
+  border-radius: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product__button.active > * {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  vertical-align: middle;
+  padding: 0 8px;
+}
+
+.product__input-radio {
+  display: none;
+}
+
+.product__input-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.product__button-wrapper {
+  margin-top: 10px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  position: relative;
+}
+
+.product__price {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28px;
+  margin: 5px 0 0 0;
+}
+
+.product__name {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21px;
+  text-align: center;
+}
+
+.product__label-radio {
+  border: 1px solid #7D7D7D;
+  border-radius: 11.5px;
+  width: 47px;
+  height: 23px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: center;
+  cursor: pointer;
+}
+
+.product__label-radio:nth-child(2) {
+  margin: 0 5px 0 0;
+}
+
+.product__input-radio:checked + .product__label-radio {
+  background-color: #E70000;
+  border: 1px solid #E70000;
+  color: #FFF;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+
+
+@media (max-width: 768px) {
+  .product__row {
+    grid-template-columns: repeat(2, minmax(175px, 1fr));
+  }
+}
