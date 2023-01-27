@@ -1,0 +1,40 @@
+main {
+    padding: 100px 20px 0 20px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+@media (max-width: 575.98px) { 
+    main{
+        width: 100%;
+    }
+}
+@media (min-width: 576px) { 
+    main{
+        width: 540px;
+    }
+ }
+
+@media (min-width: 768px) { 
+    main{
+        width: 720px;
+    } 
+}
+
+@media (min-width: 992px) { 
+     main{
+        width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {  
+    main{
+        width: 1140px;
+    } 
+}
+
+@media (min-width: 1350px) {  
+    main{
+        width: 1200px;
+    } 
+}

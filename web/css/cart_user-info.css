@@ -1,0 +1,59 @@
+.user-info__title{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    margin-bottom: 40px;
+}
+.user-info__input-title{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 23px 0;
+}
+.user-info__input{
+    outline: none;
+    width: 100%;
+    height: 40px;
+    padding: 10px 20px;
+    border: 1px solid #2A2A2A;
+    border-radius: 20px;
+    background-color: initial;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+ 
+}
+.user-info__input::placeholder{
+    color: #948686;
+}
+.user-info__input-wrapper{
+    margin-top: 10px; 
+    display: grid;
+    gap: 20px;
+    grid-auto-flow: column;
+}
+input[type=radio]{
+    display: none;
+}
+.user-info__radio-wrapper label{
+    margin:20px 0;
+    padding-left: 32px;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+input[name=delivery]:checked + label::before{
+    background: #2A2A2A;
+    transition-duration: 0.4s;
+}
+.user-info__radio-wrapper label::before{
+   
+    content: '';
+    position:absolute;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 1px solid #2A2A2A;
+    transition-duration: 0.4s;
+}
