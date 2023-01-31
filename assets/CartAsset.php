@@ -13,6 +13,7 @@ class CartAsset extends AssetBundle
         'css/main-container.css',
         'css/cart_product.css',
         'css/cart_user-info.css',
+        'css/cart_order-result.css',
     ];
     public $js = [
     ];
