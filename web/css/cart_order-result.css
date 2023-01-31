@@ -1,0 +1,58 @@
+.order-result__title{
+    font-family: Inter, sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.order-result__wrapper{
+    padding: 16px 20px;
+    
+}
+.order-result__row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px;
+
+}
+.order-result__item{
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 18px;
+}
+.order-result__item-value{
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 18px;
+}
+.order-result__zone{
+    border: 1px solid #2A2A2A;
+    border-radius: 16.5px;
+    padding: 7px 10px;
+    text-align: center;
+    margin: 20px 0;
+}
+.order-result__row--total > .order-result__item{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 115.4%;
+}
+.order-result__row--total > .order-result__item-value{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 115.4%;
+}
+.order-result__pay{
+    height: 61px;
+    background: #2A2A2A;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    line-height: 115.4%;
+    cursor: pointer;
+}

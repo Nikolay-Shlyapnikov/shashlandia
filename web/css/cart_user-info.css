@@ -47,7 +47,6 @@ input[name=delivery]:checked + label::before{
     transition-duration: 0.4s;
 }
 .user-info__radio-wrapper label::before{
-   
     content: '';
     position:absolute;
     left: 0;
@@ -56,4 +55,36 @@ input[name=delivery]:checked + label::before{
     border-radius: 50%;
     border: 1px solid #2A2A2A;
     transition-duration: 0.4s;
+}
+.user-info__last-row{
+    padding: 40px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.user-info__primary-button{
+    align-self: center;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 27px;
+    box-sizing: content-box;
+    padding: 13px 50px;
+    font-size: 20px;
+    font-weight: 800;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 100px;
+    background-color: #2A2A2A;
+    transition-duration: 300ms;
+    cursor: pointer;
+}
+.user-info__primary-button:hover{
+    padding: 13px 80px;
+}
+.user-info__comment{
+    color: #2A2A2A;
+    text-decoration: none;
+    border-bottom: 1px dashed #2A2A2A;    
 }
