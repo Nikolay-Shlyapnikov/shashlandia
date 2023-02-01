@@ -15,14 +15,16 @@ $this->registerJsFile('js/main.js', ['type' => 'module']);
 ?>
 
 <section class="delivery-meat">
-    <div class="delivery-meat__wrapper">
-        <div class="delivery-meat__info">
-            <h1 class="delivery-meat__title">Доставим всё для<br> шашлыка и пикника</h1>
-            <a href="#categories" class="primary-button delivery-meat__button">Начать покупки</a>
+    <div class="container">
+        <div class="delivery-meat__wrapper">
+            <div class="delivery-meat__info">
+                <h1 class="delivery-meat__title">Доставим всё для<br> шашлыка и пикника</h1>
+                <a href="#categories" class="primary-button delivery-meat__button">Начать покупки</a>
+            </div>
+            <div class="delivery-meat__image"></div>
         </div>
-        <video class="delivery-meat__video" autoplay muted loop src="<?= Yii::getAlias('@videos') ?>/delivery-meat.mp4"></video>
+        <div id="categories" class="invisible-separator"></div>
     </div>
-    <div id="categories" class="invisible-separator"></div>
 </section>
 <section class="category">
     <div class="container">

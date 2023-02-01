@@ -44,6 +44,6 @@ PaymentAsset::register($this);
 
 <section class="map">
     <div class="container">
-        <div id="map"></div>
+    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A4043221a80f3e2677d408ebd102907980557d16c3166855ecdfef72f6ae9ef0b&amp;source=constructor" width="100%" height="450" frameborder="0"></iframe>
     </div>
 </section>

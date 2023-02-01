@@ -12,7 +12,6 @@ ContactsAsset::register($this);
     <div class="container">
         <h1>Контакты</h1>
         <div class="map-wrapper">
-            <div id="map"></div>
             <div id="map-info">
                 <div class="map-info__inner">
                     <h3>Режим работы:</h3>
@@ -26,6 +25,7 @@ ContactsAsset::register($this);
                     <?= $this->render('/partials/_contacts.php') ?>
                 </div>
             </div>
+            <div id="map"></div>
         </div>
     </div>
 </section>
