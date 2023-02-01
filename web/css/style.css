@@ -64,6 +64,10 @@ p {
     margin: 0 auto;
     width: 100%;
 }
+button {
+    outline: none;
+    border: none;
+  }
 @media (max-width: 575.98px) { 
     .container{
         width: 100%;

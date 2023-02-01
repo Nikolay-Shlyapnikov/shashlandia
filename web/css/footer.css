@@ -106,3 +106,17 @@
 .page-footer .row-bottom .copyright p:nth-child(2) a span {
     text-transform: uppercase;
 }
+@media (max-width: 768px) { 
+    .page-footer .row-top{
+       flex-direction: column;
+       align-items: flex-start;
+    }
+    .page-footer .row-top>div{
+        margin-top: 20px;
+        align-items: flex-start;
+        max-width: 100%;
+     }
+     .page-footer .row-top>div>ul{
+        text-align: left;
+     }
+}

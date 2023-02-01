@@ -5,7 +5,6 @@ import { renderProductsList } from "./product-list.js";
 import {setStorageInfo} from './storage.js';
 import {plusCountProduct, minusCountProduct} from './productCart.js'
 import { cartCounter } from './cart.js';
-
 getDataArray(
     [
         'http://localhost:80/categories',
@@ -19,7 +18,11 @@ getDataArray(
     }
 );
 
-
+const headerBurgerButton = document.querySelector('.page-header__burger');
+headerBurgerButton.addEventListener('click', (evt) => {
+    headerBurgerButton.classList.toggle('active');
+    headerBurgerButton.previousElementSibling.classList.toggle('active');
+});
 //cartCounter();
 const productsListElement = document.querySelector('.product__row');
 

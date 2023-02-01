@@ -102,4 +102,10 @@
         bottom: 12px;
         right: 12px;
     }
+    .services__text-title{
+        font-size: 20px;
+    }
+    .services__title{
+        font-size: 30px;
+    }
  }

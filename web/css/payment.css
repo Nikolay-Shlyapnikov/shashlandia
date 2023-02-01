@@ -17,9 +17,12 @@
     padding: 0;
     list-style: none;
 }
-
+.payment .container > ul {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
 .payment .container > ul > li {
-    width: 350px;
     padding: 20px;
     border-radius: 10px;
     border: 1px dashed #000;
@@ -67,4 +70,12 @@
     border-radius: 10px;
     border: 1px dashed #000;
     overflow: hidden;
+}
+
+
+@media (max-width: 992px) { 
+    .payment .container > ul{
+        justify-content: center;
+        grid-template-columns: minmax(200px, 400px);
+    }
 }

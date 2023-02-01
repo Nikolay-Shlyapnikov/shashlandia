@@ -1,73 +1,64 @@
 .delivery-meat__wrapper {
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-    height: 100%;
-}
-
-.delivery-meat__wrapper::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, .7);
-    z-index: 2;
+    display: grid;
+    grid-template-columns:  35% 60%;
+    grid-template-rows: minmax(435px, 1fr);
+    justify-items: space-between;
+    align-items: center;
+    gap: 30px;
 }
 
 .delivery-meat__info {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    z-index: 3;
-    transform: translate(-50%, -50%);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
-
+.delivery-meat__image{
+    height: 100%;
+    background-image: url(../img/delivery-meat.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* box-shadow: inset 114px 114px 40px rgba(255, 255, 255, 0.7); */
+}
 .delivery-meat__title {
+    font-size: 30px;
     font-weight: 800;
-    font-size: 40px;
-    line-height: 100%;
-    text-align: center;
-    width: 100%;
-    color: #fff;
+    line-height: 46px;
+    text-align: left;    
+    color: #222222;
     text-shadow: rgb(0 0 0 / 12%) 0 1px 3px, rgb(0 0 0 / 24%) 0 1px 2px;
 }
-
-.delivery-meat {
-    width: 100%;
-
-    height: 100vh;
-    margin: 0 0 50px 0;
+.delivery-meat{
+    margin: 70px 0 50px 0;
+    background-color: #EBEBEB;
+    padding: 50px 0;
 }
 
-.delivery-meat__button {
-    margin-top: 20px;
-    width: 205px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 25px;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    cursor: pointer;
-    background: #e70000;
-    color: #fefefe;
-    border: 1px solid #e70000;
-    box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
-    text-decoration: none;
-    transition: all 0.3s;
+@media (max-width: 768px) { 
+    .delivery-meat__image{
+        display: none;
+    } 
+    .delivery-meat__wrapper{
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content;
+    }
+    .delivery-meat__title{
+        text-align: center;
+    }
+    .delivery-meat{
+        margin: 70px 0 0 0; 
+    }
+}
+
+@media (max-width: 992px) and (min-width: 768px) { 
+    .delivery-meat__wrapper{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 400px;
+    }
+    .delivery-meat{
+        padding: 0;
+    }
 }
 
 
-.delivery-meat__video {
-    width: 100%;
-    position: relative;
-    display: block;
-}
+

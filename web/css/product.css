@@ -193,15 +193,10 @@
   color: #FFF;
 }
 
-button {
-  outline: none;
-  border: none;
-}
-
 
 
 @media (max-width: 768px) {
   .product__row {
-    grid-template-columns: repeat(2, minmax(175px, 1fr));
+    grid-template-columns: repeat(2, minmax(145px, 1fr));
   }
 }
