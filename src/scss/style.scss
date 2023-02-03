@@ -1,0 +1,20 @@
+$gray: #7D7D7D;
+$white: #FFF;
+$black: #2A2A2A;
+$red: #E70000;
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1200px;
+    padding: 0 24px;
+    margin: 0 auto;
+}
+body{
+    background: #EBEBEB;
+}
+@import 'null.scss';
+@import 'adaptive.scss';
+@import 'user-info.scss';
+@import 'history.scss';

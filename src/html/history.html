@@ -1,0 +1,78 @@
+<section class="order">
+    <h2 class="order__title">История заказов</h2>
+    <div class="order__wrapper">
+        <div class="order__item" data-order_id="1">
+            <p class="order__date">16.05.2022</p>
+            <p class="order__count"> 4 товара</p> 
+            <p class="order__time">22:49</p>
+            <p class="order__price">1.479&#8381;</p> 
+            <p class="order__status order__status--delete">Заказ удалён</p>
+            <button class="order__info">Смотреть заказ</button>
+        </div>
+        <div class="order__item" data-order_id="2">
+            <p class="order__date">16.05.2022</p>
+            <p class="order__count"> 4 товара</p> 
+            <p class="order__time">22:49</p>
+            <p class="order__price">1.479&#8381;</p> 
+            <p class="order__status order__status--wait">Заказ удалён</p>
+            <button class="order__info">Смотреть заказ</button>
+        </div>
+        <div class="order__item" data-order_id="3">
+            <p class="order__date">16.05.2022</p>
+            <p class="order__count"> 4 товара</p> 
+            <p class="order__time">22:49</p>
+            <p class="order__price">1.479&#8381;</p> 
+            <p class="order__status order__status--delivered">Заказ удалён</p>
+            <button class="order__info">Смотреть заказ</button>
+        </div>
+    </div>
+</section>
+<template id="order">
+    <div class="order__item" data-orderId="1">
+        <p class="order__date"></p>
+        <p class="order__count"></p> 
+        <p class="order__time"></p>
+        <p class="order__price"></p> 
+        <p class="order__status order__status--delivered"></p>
+        <button class="order__info"></button>
+    </div>
+</template>
+
+<template id="modal">
+    <div class="window">
+        <div class="cart__product-list">
+            <h2 class="visually-hidden">Продукты</h2>
+            <div class="cart__product-wrapper"></div>
+        </div>
+        
+        <div class="cart__order-result order-result__wrapper">
+            <h2 class="order-result__title">Ваш заказ:</h2>
+            <dl class="order-result__row">
+                <dt class="order-result__item">Товаров:</dd>
+                <dd class="order-result__item-value "><span class="total-wt"></span></dt>
+        
+                <dt class="order-result__item order-result__item--total">Общая сумма</dd>
+                <dd class="order-result__item-value order-result__item-value--total"><span class="price-wt"></span>&#8381;</dt>
+            </dl>
+        </div>
+    </div>
+</template>
+
+<template id="product">
+    <div class="cart__product" style="transition-duration: 300ms;">
+        <div class="cart__product-image">
+            <img src="/img/about-barbecue.png" alt="">
+        </div>
+        <div class="cart__product-info">     
+            <div class="cart__product-text">
+                <div class="cart__product-name">Шашлык из свиной шейки</div>
+                <div class="cart__product-weight">1.5кг.</div>
+            </div>
+        </div>
+        <div class="cart__product-count">
+            <div class="product__counter" style="font-size: 20px; font-weight: 700;">1</div>
+        </div>
+        <div class="cart__product-price">320&#8381;</div>
+        <div class="cart__product-cross"></div>
+    </div>
+</template>
